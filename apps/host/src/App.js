@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { inject as inject1, destroy as destroy1 } from "remote1/injector";
 import { inject as inject2, destroy as destroy2 } from "remote2/injector";
+import "./styles.css";
 
 const parentElementId1 = "parent1";
 const parentElementId2 = "parent2";

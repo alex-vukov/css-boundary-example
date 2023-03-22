@@ -8,6 +8,8 @@
     "start": "lerna run start --parallel"
   },
   "devDependencies": {
-    "lerna": "^6.5.1"
+    "css-loader": "^6.7.3",
+    "lerna": "^6.5.1",
+    "style-loader": "^3.3.2"
   }
 }
