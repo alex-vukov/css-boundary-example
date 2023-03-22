@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
+import { CssBoundary } from "css-boundary";
 import "./styles.css";
 
 const App = () => {
   return (
-    <div>
-      <h1>Remote application 1 - React Version {React.version}</h1>
-    </div>
+    <CssBoundary>
+      <div>
+        <h1>Remote application 1 - React Version {React.version}</h1>
+      </div>
+    </CssBoundary>
   );
 };
 

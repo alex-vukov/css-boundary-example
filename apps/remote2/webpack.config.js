@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
+const { insert } = require("css-boundary");
 
 module.exports = {
   entry: "./src/index",
@@ -14,6 +15,9 @@ module.exports = {
   output: {
     publicPath: "auto",
   },
+  resolve: {
+    modules: [path.resolve(__dirname, "node_modules"), "node_modules"],
+  },
   module: {
     rules: [
       {
@@ -26,7 +30,15 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: [
+          {
+            loader: "style-loader",
+            options: {
+              insert,
+            },
+          },
+          "css-loader",
+        ],
       },
     ],
   },
