@@ -1,0 +1,13 @@
+{
+  "name": "css-boundary-example",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "start": "lerna run start --parallel"
+  },
+  "devDependencies": {
+    "lerna": "^6.5.1"
+  }
+}
