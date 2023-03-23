@@ -18,7 +18,7 @@
     "start": "webpack-cli serve"
   },
   "dependencies": {
-    "css-boundary": "^1.0.3",
+    "css-boundary": "^1.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
